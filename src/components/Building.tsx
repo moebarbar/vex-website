@@ -92,7 +92,7 @@ export function Building() {
                 </div>
                 <p className="text-sm text-gray-400 max-w-xl leading-relaxed">{desc}</p>
               </div>
-              <span className="text-sm text-gray-500 sm:text-right whitespace-nowrap">{category}</span>
+              <span className="text-sm text-gray-500 sm:text-right shrink-0">{category}</span>
             </div>
           ))}
         </div>

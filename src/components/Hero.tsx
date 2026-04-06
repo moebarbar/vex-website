@@ -78,9 +78,9 @@ export function Hero() {
       <div className="absolute inset-0 z-[1] bg-gradient-to-br from-black/40 via-transparent to-black/60 pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 min-h-screen grid grid-cols-1 lg:grid-cols-2 items-center gap-10 px-6 lg:px-12 pt-28 pb-16">
-        {/* Left */}
-        <div className="flex flex-col gap-7">
+      <div className="relative z-10 min-h-screen flex flex-col justify-center gap-8 px-6 lg:px-12 pt-28 pb-24">
+        {/* Heading + sub + buttons */}
+        <div className="flex flex-col gap-7 max-w-3xl">
           <h1
             ref={h1Ref}
             className="text-4xl sm:text-5xl xl:text-7xl font-medium leading-[1.05]"
@@ -113,11 +113,11 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right */}
-        <div className="flex items-end justify-end h-full">
+        {/* Tag — bottom left on mobile, bottom right on lg */}
+        <div className="flex lg:justify-end">
           <div
             ref={tagRef}
-            className="liquid-glass rounded-xl px-6 py-4 text-lg lg:text-2xl font-light text-white border border-white/20 whitespace-nowrap"
+            className="liquid-glass rounded-xl px-5 py-3 sm:px-6 sm:py-4 text-base sm:text-lg lg:text-2xl font-light text-white border border-white/20"
             style={{ opacity: 0 }}
           >
             Investing. Building. Advisory.
